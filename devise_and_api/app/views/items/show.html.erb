@@ -1,0 +1,20 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<p>
+  <strong>Label:</strong>
+  <%= @item.label %>
+  <!-- <%= image_tag(@item.label, :width => 600) if @item.label.present? %> -->
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @item.amount %>
+</p>
+
+<p>
+  <strong>Bought:</strong>
+  <%= @item.bought %>
+</p>
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
