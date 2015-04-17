@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   devise_for :users
   get 'pages/info'
 
+
   root :to => redirect('/items')
   resources :items
 
+  get '/readers/:id' => 'readers#view'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
